@@ -1,0 +1,153 @@
+.card {
+  background: #0b0b2a;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 96%;
+  margin: 10px auto;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  padding: 40px;
+  border-radius: 20px;
+  max-height: 450px;
+}
+h1{
+  color: white;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 33px;
+ margin: 40px 0;
+}
+span{
+  color: #ff7b00;
+}
+
+.card-img {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+              0 0 25px rgba(235, 130, 10, 0.7),
+              0 0 35px rgba(236, 110, 7, 0.6);
+  transition: all 0.3s ease;
+  
+}
+.card-img:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9),
+              0 0 35px rgba(0, 183, 255, 0.9),
+              0 0 50px rgba(0, 183, 255, 0.8);
+  transform: scale(1.02);
+}
+.card-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-content {
+  padding: 16px 20px;
+}
+
+.card-meta {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.card-meta span {
+  margin: 0 8px;
+  color: #888;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #f5f5f5;
+}
+
+.card-desc {
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.articles-container {
+  width: 80%;
+  gap: 25px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.swiper-pagination {
+  display: none !important;
+}
+
+/* Navigation arrows */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  background: orange;
+  color: #fff !important;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  font-size: 16px !important;
+  line-height: 1 !important;
+}
+
+.mySwiper .swiper-button-next:hover,
+.mySwiper .swiper-button-prev:hover {
+  background: #ff7b00;
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 768px) {
+  .articles-container {
+    padding: 40px 20px;
+  }
+  .card {
+    padding: 25px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 460px) {
+  .articles-container {
+    padding: 0 !important;
+  }
+  .card {
+    padding: 25px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-desc {
+    font-size: 14px;
+  }
+  h1{
+  color: white;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 25px;
+ margin: 20px 0;
+}
+}

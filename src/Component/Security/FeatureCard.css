@@ -1,0 +1,96 @@
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Icon wrapper */
+.icon-wrapper {
+  width: 92px;
+  height: 92px;
+  background: #001f4d;
+  border: 4px solid #E75F00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  flex-shrink: 0; /* ✅ prevents squishing on smaller screens */
+}
+
+.icon {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Text content */
+.text-content h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 550;
+  font-family: 'Inter';
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.text-content p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-style: italic;
+  color: #999999;
+  font-family: 'Inter';
+  max-width: 500px;
+}
+
+/* ✅ Responsive for tablets & below */
+@media (max-width: 768px) {
+  .feature-card {
+    flex-direction: column;   /* stack icon above text */
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-wrapper {
+    margin: 0 0 20px 0; /* center & reduce bottom space */
+  }
+
+  .text-content h3 {
+    font-size: 22px;
+  }
+
+  .text-content p {
+    font-size: 15px;
+    max-width: 90%; /* narrower on small screens */
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .feature-card {
+    flex-direction: column;   /* stack icon above text */
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-wrapper {
+    margin: 0 0 10px 0; /* center & reduce bottom space */
+     width: 52px;
+  height: 52px;
+  }
+
+  .text-content h3 {
+    font-size: 18px;
+  }
+
+  .text-content p {
+    font-size: 15px;
+    max-width: 90%; /* narrower on small screens */
+  }
+  .icon {
+  font-size: 20px;
+  color: #fff;
+}
+}

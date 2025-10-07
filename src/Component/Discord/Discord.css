@@ -1,0 +1,69 @@
+.cta-box {
+  background-color: #e85c0d;  
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 1212px;
+  margin: 40px auto;
+  font-family: "Ubuntu", sans-serif;
+  width: 75%;
+}
+
+.cta-box h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #e85c0d;
+  border: none;
+  border-radius: 32px;
+  padding: 17px 40px;
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 30px;
+}
+
+.cta-btn:hover {
+  background: #beb8af;
+}
+
+@media (max-width: 480px) {
+  .cta-box {
+  background-color: #e85c0d;  
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  
+  margin: 40px auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.cta-box h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #e85c0d;
+  border: none;
+  border-radius: 20px !important;
+  padding: 10px 15px ;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+ 
+}
+
+}

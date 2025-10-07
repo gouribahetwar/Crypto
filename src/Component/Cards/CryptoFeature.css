@@ -1,0 +1,173 @@
+.crypto-section {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 40px 140px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+
+.crypto-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.crypto-section h2 span {
+  color: #ff6a00; /* orange for CRYPTO */
+}
+
+.crypto-section p {
+  color: #999999;
+  font-size: 1rem;
+  margin-bottom: 80px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  justify-items: center;
+
+}
+
+.crypto-card {
+  background:#110F24;
+  border-radius: 12px;
+  padding: 70px 20px 20px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crypto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 106, 0, 0.3);
+}
+
+.img-wrapper {
+  position: absolute;
+  top: -45px; /* slight overlap */
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.img-wrapper img {
+  width: 170px;
+  height: 170px;
+}
+
+.crypto-card h3 {
+  margin-top: 40px; 
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  max-width: 180px;  
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+/* Your existing code stays as is for laptop */
+
+/* ===================== */
+/* Tablet (≤ 1024px) */
+/* ===================== */
+@media (max-width: 1024px) {
+  .crypto-section {
+    padding: 40px 60px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .crypto-card {
+    max-width: 280px;
+    padding: 60px 15px 20px;
+  }
+
+  .img-wrapper img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ===================== */
+/* Mobile (≤ 768px) */
+/* ===================== */
+@media (max-width: 768px) {
+  .crypto-section {
+    padding: 30px 30px;
+  }
+
+  .crypto-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .crypto-section p {
+    font-size: 0.95rem;
+    margin-bottom: 50px;
+    padding: 0 10px;
+  }
+
+ 
+
+  .crypto-card {
+    max-width: 100%;
+    padding: 60px 15px 20px;
+  }
+
+  .img-wrapper img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .crypto-card h3 {
+    font-size: 0.95rem;
+    margin-top: 30px;
+    max-width: 160px;
+  }
+}
+
+/* ===================== */
+/* Small Mobile (≤ 480px) */
+/* ===================== */
+@media (max-width: 480px) {
+  .crypto-section {
+    padding: 25px!important;
+    margin-top: 50px;
+  }
+
+  .crypto-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .crypto-section p {
+    font-size: 0.9rem;
+  }
+
+  .img-wrapper img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .crypto-card {
+    padding: 50px 10px 15px;
+  }
+
+  .crypto-card h3 {
+    font-size: 0.9rem;
+    
+  }
+
+}
+/* Flame/glow effect under icon */

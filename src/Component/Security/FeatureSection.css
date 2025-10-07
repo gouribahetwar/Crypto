@@ -1,0 +1,95 @@
+.feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  background: #000;
+  padding: 0 50px;
+  color: #fff;
+  width: 75%;
+  margin: auto;
+  flex-wrap: wrap; /* ✅ ensures wrapping on smaller screens */
+}
+
+.feature-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-image img {
+  max-width: 100%; /* ✅ responsive */
+  height: auto;
+  margin-bottom: 20px;
+  padding-top: 0;
+}
+
+.feature-list {
+  flex: 1;
+  min-width: 300px; /* ✅ prevents too small content on mobile */
+}
+
+/* ✅ Responsive for tablets & below */
+@media (max-width: 768px) {
+  .feature-section {
+    flex-direction: column; /* ✅ stack vertically */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .feature-image {
+    margin-bottom: 30px;
+  }
+
+  .feature-list {
+    text-align: left;
+  }
+
+  .feature-card {
+    justify-content: center;
+  }
+
+  .icon-wrapper {
+    margin: 0 auto 10px auto; /* ✅ center icon */
+  }
+
+  .text-content h3 {
+    font-size: 22px;
+  }
+
+  .text-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-section {
+    flex-direction: row; 
+    text-align: center;
+    padding: 0;
+  }
+
+  .feature-image {
+    margin-bottom: 10px;
+  }
+
+  .feature-list {
+    text-align: left;
+  }
+
+  .feature-card {
+    justify-content: center;
+  }
+
+  .icon-wrapper {
+    margin: 0 auto 8px auto; /* ✅ center icon */
+  }
+
+  .text-content h3 {
+    font-size: 18px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+}

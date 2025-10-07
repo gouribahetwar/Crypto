@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 
-import travelImg1 from "../../assets/Article1.png";
+import travelImg1 from "../../assets/article1.png";
 import travelImg2 from "../../assets/Article2.png";
 import travelImg3 from "../../assets/Article2.png";
 

@@ -7,7 +7,7 @@ import diamondImg from "../../assets/Diamond.png";
 import paperImg from "../../assets/Ice.png";
 import right from "../../assets/right1.png";
 import layer from "../../assets/Layer.png";
-import diamnds from "../../assets/diamnd.png";
+import diamnds from "../../assets/dia.png";
 
 const features = [
   { img: coinImg, title: "LAVARAGE UPTO 30%" },

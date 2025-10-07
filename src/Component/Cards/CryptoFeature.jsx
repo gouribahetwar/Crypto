@@ -3,11 +3,11 @@ import "./CryptoFeature.css";
 import { motion } from "framer-motion";
 
 import coinImg from "../../assets/coin.png";  
-import diamondImg from "../../assets/diamond.png";
+import diamondImg from "../../assets/Diamond.png";
 import paperImg from "../../assets/Ice.png";
 import right from "../../assets/right1.png";
 import layer from "../../assets/Layer.png";
-import diamnds from "../../assets/Diamnd.png";
+import diamnds from "../../assets/diamnd.png";
 
 const features = [
   { img: coinImg, title: "LAVARAGE UPTO 30%" },
